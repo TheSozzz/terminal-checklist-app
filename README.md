@@ -1,5 +1,5 @@
 # terminal-tasklist-app
-A basic tasklist app accessible through the terminal. It works by creating a text file called 
+A basic tasklist app accessible through the terminal. It works by creating a text file called taskList.txt in the same folder as the one the script is stored in, and keeping any list items there. If you already have a file called taskList.txt in the same folder as the script, this could overwrite it.
 
 To print the tasklist to terminal, just run the file without inputting any commands. To make this easier you can give the file an alias, such as 
 
