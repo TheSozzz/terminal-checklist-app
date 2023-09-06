@@ -1,8 +1,16 @@
 #!/bin/sh
 
-#create list of items
-file="/home/orca/Documents/scripts/assets/taskList.txt"
+#create new file if necessary
+scriptDir=$(dirname "$0")
 
+file="$scriptDir/taskList.txt"
+
+if ! [ -f "$file" ]; then
+	file="$scriptDir/taskList.txt"
+	echo >> $file
+fi
+
+#create list of items
 taskList=()
 while IFS= read -r line
 do 
@@ -123,5 +131,4 @@ else
 echo " List is empty ¯\_(ツ)_/¯"
 fi
 echo "----------------------------------------"
-
 
